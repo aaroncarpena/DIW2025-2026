@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etiquetas</title>
+  </head>
+  <body>
+    <header>
+      <h1>Etiquetas</h1>
+      <nav>
+        <a href="index.html">Página de Inicio</a>
+      </nav>
+    </header>
+    <main>
+      <h4>Abbr y dfn</h4>
+      <p>Etiquetas utilizadas para abreviaturas y acrónimos</p>
+      <p>
+        <dfn><abbr title="Counter Strike Global Offensive">CSGO</abbr> </dfn> es
+        un <dfn><abbr title="First Person Shooter">FPS</abbr></dfn
+        >, desarrollado por la compañía Valve.
+      </p>
+      <h4>Address</h4>
+      <p>
+        Etiqueta usada para presentar información relacionada con el contenido
+        del article o el body
+      </p>
+      <address>
+        <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>
+      </address>
+      <h4>Bdi</h4>
+      <p>Etiqueta usada en textos para su formato bidireccional</p>
+      <bdi>العربية</bdi>
+      <h4>Code</h4>
+      <p>
+        Etiqueta usada para indicar secciones de código que no tienen que ser
+        ejecutados, solo leídos
+      </p>
+      <code>
+        function sumar(x, y) { return x + y; } function restar(x, y) { return x
+        - y; } function multiplicar(x, y) { return x * y; }
+      </code>
+      <h4>Cite</h4>
+      <p>
+        Encierra una obra artística o creativa en las que no se incluye el autor
+      </p>
+      <span
+        >La canción <cite>Despacito</cite> de Luis Fonsi y Daddy Yankee. Fue
+        sacada en 2017.</span
+      >
+      <h4>Data</h4>
+      <p>
+        Nos ofrece una traducción legible por la máquina del significado del
+        contenido.
+      </p>
+      <p>
+        La temperatura actual es <data value="25">veinticinco</data> grados
+        Celsius.
+      </p>
+      <h4>Datalist</h4>
+      <p>
+        Utilizada para asociar a un input de tipo texto o a un select una serie
+        de opciones predefinidas.
+      </p>
+      <input list="coche" />
+      <datalist id="coche">
+        <option value="Opel Corsa"></option>
+        <option value="Lamborghini Huracán"></option>
+        <option value="Peugeot 2006"></option>
+      </datalist>
+      <h4>Details y Summary</h4>
+      <p>Usada para especificar detalles adicionales a un texto</p>
+      <details>
+        <summary>Refrán 1</summary>
+        <p>A llorar a la llorería</p>
+      </details>
+      <details>
+        <summary>Refrán 2</summary>
+        <p>Rebota rebota y en tu culo explota</p>
+      </details>
+      <details>
+        <summary>Refŕan 3</summary>
+        <p>Me piro, vampiro</p>
+      </details>
+      <h4>Ins y del</h4>
+      <p>Utilizadas para describir inserciones y eliminaciones en un HTML</p>
+
+      <strong>Que comí ayer</strong>
+      <ul>
+        <li><del>Macarrones</del></li>
+        <li><ins>Hamburguesa</ins></li>
+      </ul>
+      <h4>Kbd</h4>
+      <p>Sirve para comunicar que debe hacer durante una interacción</p>
+      <p>
+        Para cambiar de ventana, presione
+        <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Tab</kbd>.
+      </p>
+      <h4>Main</h4>
+      <p>Sirve para representar el contenido principal del body</p>
+      <h4>Mark</h4>
+      <p>
+        Resalta parte del texto que originalmente era considerada no importante
+      </p>
+      <p>Arriba chuta la<mark> victoria</mark> es tuya</p>
+      <h4>Meter</h4>
+      <p>Sirve para marcar medidas con un mínimo y un máximo</p>
+      <meter>9 de 10 dentistas</meter>
+      <meter max="10">9 dentistas</meter>
+      <h4>Output</h4>
+      <p>
+        Sirve para marcar el resultado de un cálculo o e una acción del usuario
+      </p>
+      <form oninput="resultado.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="number" id="a" name="a" /> +
+        <input type="number" id="b" name="b" /> =
+        <output name="resultado"></output>
+      </form>
+      <h4>Picture</h4>
+      <p>
+        Su función es hacer que el navegador eliga la imagen más óptima de una
+        imagen
+      </p>
+      <picture>
+        <source srcset="Rajoy.jpeg" type="image/jpeg" />
+        <source srcset="Meme.jpg" type="image/jpg" />
+      </picture>
+      <h4>Progress</h4>
+      <p>Añade una barra de progreso</p>
+      <progress min="0" max="100" value="30"></progress>
+      <h4>Q</h4>
+      <p>
+        Designa una cita corta del contenido de un texto incluyendo comillas
+      </p>
+      <p>
+        Cuando le preguntaron su opinión, él respondió:
+        <q>El conocimiento es poder</q>.
+      </p>
+      <h4>Ruby</h4>
+      <p>
+        Sirve para marcar anotaciones ruby en lenguajes ideogramáticos, que
+        sirve como guía para la pronunciación
+      </p>
+      <ruby> 明<rt>あ</rt> 日<rt>した</rt> </ruby>
+      <h4>S</h4>
+      <p>Representa contenido que ya no es relevante, preciso o aplicable</p>
+      <p><s>Avatar 2</s> Sin entradas disponibles</p>
+      <h4>Samp</h4>
+      <p>
+        Indica la salida de un sistema informático, el contenido tiene que ser
+        una copia de una interacción con el dispositivo
+      </p>
+      <p>
+        Antes de la imagen hay un texto de varias líneas explicando algo sobre
+        programación.
+      </p>
+      <p>
+        También puede incluir un ejemplo con
+        <samp>Salida del programa</samp> para mostrar resultados.
+      </p>
+
+      <h4>Small</h4>
+      <p>Sirve para usar la letra pequeña</p>
+      <small>Este documento no es válido</small>
+      <h4>Sup y Sub</h4>
+      <p>Hacen referencia al superíndice y al subíndice</p>
+        <abbr>5<sup>2</sup></abbr>
+        <abbr>3<sub>1</sub></abbr>
+      <h4>Time</h4>
+      <p>Declara texto comprensible que representa la hora y la fecha, tanto para los humanos como para las máquinas</p>
+      <time datetime="2025-11-07" pubdate>Creado 11-07-2025</time>
+      <h4>Var</h4>
+      <p>Representa una variable en un contexto informático o matemático</p>
+      <p><var>contador</var> = 0</p>
+      <h4>Wbr</h4>
+      <p>Representa el lugar donde se puede hacer salta de línea en una palabra</p>
+      <p>supercalifragilistico<wbr>espialidoso.</p>
+    </main>
+  </body>
+</html>
