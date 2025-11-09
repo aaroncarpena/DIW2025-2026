@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios 1 & 2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ejercicios 1 & 2</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <svg width="250" height="100">
+          <defs>
+            <linearGradient id="PadGradient" x1="33%" x2="67%">
+              <stop offset="0%" stop-color="red" />
+              <stop offset="100%" stop-color="yellow" />
+            </linearGradient>
+            <linearGradient
+              id="ReflectGradient"
+              spreadMethod="reflect"
+              x1="33%"
+              x2="67%"
+            >
+              <stop offset="0%" stop-color="green" />
+              <stop offset="100%" stop-color="blue" />
+            </linearGradient>
+            <linearGradient
+              id="RepeatGradient"
+              spreadMethod="repeat"
+              x1="33%"
+              x2="67%"
+            >
+              <stop offset="0%" stop-color="fuchsia" />
+              <stop offset="100%" stop-color="orange" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </section>
+      <section>
+        <h3>Ejercicio 1</h3>
+        <p>
+          El spreadmethod se puede utilizar en los dos tipos de degradados, el
+          linearGradient y el radialGradient
+        </p>
+        <p>
+          Este atributo puedo tener tres valores distintos que son pad, reflect
+          y repeat
+        </p>
+        <p>
+          <strong>Pad: </strong>Es el valor por defecto, consiste en que el
+          color final se mantiene hasta el final de la figura
+        </p>
+        <svg width="250" height="100">
+          <rect width="200" height="50" fill="url(#PadGradient)" />
+        </svg>
+        <p>
+          <strong>Reflect: </strong>Consiste en que el degradado se repite en
+          sentido inverso del degradado
+        </p>
+        <svg width="250" height="100">
+          <rect width="200" height="50" fill="url(#ReflectGradient)" />
+        </svg>
+        <p>
+          <strong>Repeat: </strong>Consiste en que el degradado se repite en el
+          orden de los colores del degradado
+        </p>
+        <svg width="250" height="100">
+          <rect width="200" height="50" fill="url(#RepeatGradient)" />
+        </svg>
+      </section>
+      <section>
+        <h3>Ejercicio 2</h3>
+        <p>En el primero lo que haces es crear un texto, posicionado a 20 en el eje x y a 50 en el eje y, con un relleno de color rojo y un tamaño de 40px</p>
+        <p>En el segundo lo que haces es crear otro texto, posicionado a 20 en el eje x y a 100 en el eje y, sin relleno, un borde de color negro y un tamaño de 40px</p>
+        <p>En el tercero lo que haces es crear un texto más, posicionado a 10 en el eje x y a 150 en el eje y, un borde de color cyan con 2 de anchura con un tamaño de 40px</p>
+        <svg width="250" height="160">
+          <text 
+            x="20" 
+            y="50" 
+            fill="#f00" 
+            style="font-size: 40px"
+            >
+            Texto 1
+        </text>
+          <text
+            x="20"
+            y="100"
+            fill="none"
+            stroke="#000"
+            style="font-size: 40px"
+          >
+            Texto 2
+          </text>
+          <text
+            x="10"
+            y="150"
+            stroke="#0FF"
+            stroke-width="2"
+            style="font-size: 40px"
+          >
+            Texto 3
+          </text>
+        </svg>
+      </section>
+    </main>
+  </body>
+</html>
