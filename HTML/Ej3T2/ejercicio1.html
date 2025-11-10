@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Ejemplo de estructura de capítulos en HTML5</title> <!--Aquí pones el título de la página-->
+</head>
+
+<body>
+    <header> <!--Aquí creas el header con un título principal y un subtítulo-->
+        <h1>Ejemplo de estructura de capítulos en HTML5</h1>
+        <h2>Presentación en HTML5</h2>
+    </header>
+    <nav> <!--Aquí creas el menú de navegación con una lista de descripciones-->
+        <dl>
+            <dt><a href="#cap1">Capítulo I</a> :</dt> <!--En los dt pones el enlace a otra página-->
+            <dd>la mañana</dd> <!--Los dd hacen referencia al título del capítulo-->
+            <dt><a href="#cap1">Capítulo II</a> :</dt> 
+            <dd>la tarde</dd>
+            <dt><a href="#cap1">Capítulo III</a> :</dt>
+            <dd>la noche</dd>
+        </dl>
+    </nav>
+    <section id="cap1"> <!--Aquí creas la sección para el primer capítulo con su respectivo contenido, un título a modo de cabecera y el texto de dicho capítulo-->
+        <h1>Capítulo I</h1>
+        <p>Hoy sale el sol, el comienzo de una nueva aventura, la de
+            la vida durante un día.</p>
+    </section>
+    <section id="cap2"> <!--Aquí lo mismo de arriba pero para el capítulo 2-->
+        <h1>Capítulo II</h1>
+        <p>Ahora viene la noche, al final de esta extraordinaria
+            aventura que ha tenido lugar hoy.</p>
+    </section>
+    <section id="cap3"> <!--Y aquí para el 3-->
+        <h1>Capítulo III</h1>
+        <p>En el corazón de la noche los espíritus están descansando,
+            preparando una nueva experiencia de vida, que tendrá lugar
+            mañana. ¡No <strong>vivas sin la alegría de un nuevo proyecto!
+            </strong></p> <!--La única diferencia es está negrita-->
+    </section>
+    <footer> <!--Aquí creas el pie con su contenido-->
+        <p>
+            <a href="http://validator.w3.org/check?uri=referer"> <!--Un enlace a una página web-->
+                ¡Página xHTML válida!
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>

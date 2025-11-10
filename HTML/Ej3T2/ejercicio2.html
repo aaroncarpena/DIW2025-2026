@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <header>
+        <h1>TITULO</h1>
+        <h4>Barra Lateral</h4>
+        <aside id="barraLateral">
+            <ul>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#acercade">Acerca de</a></li>
+                <li><a href="#deporte">Deporte</a></li>
+                <li><a href="#pistas">Pista</a></li>
+            </ul>
+        </aside>
+        <h4>Menú de navegación</h4>
+        <nav id="navegador">
+            <ul>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#acercade">Acerca de</a></li>
+                <li><a href="#deporte">Deporte</a></li>
+                <li><a href="#pistas">Pistas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>CONTENIDO</h1>
+    <main>
+        <form action="">
+            <label for="intervalo">Valor de 30 con un mínimo de 0 y un máximo de 100</label>
+            <input type="range" max="100" min="0" value="30" name="intervalo">
+            <br>
+            <label for="numero">Un valor de &frac34; sin límite de</label>
+            <input type="number" name="numero" value="0.75">
+        </form>
+
+
+
+        <mark>Fecha</mark>
+        <time datetime="2025-11-10" pubdate id="fecha">10/11/2025</time>
+        <br>
+        <label for="metro">Un valor de 50 en una escala que va de 0 a 100. El valor más bajo se establece en 55 y el más alto se establecerá en 90, siendo el óptimo 80.</label>
+        <meter min="0" max="100" value="50" low="55" high="90" optimum="80" id="metro">50</meter>
+        <br>
+        <label for="progreso">Progreso de tarea</label>
+        <progress min="0" max="100" value="80" id="progreso"></progress>
+    </main>
+</body>
+</html>
