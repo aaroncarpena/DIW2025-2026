@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog 3</title>
+  </head>
+  <body>
+    <header>
+      <h1>Blog 3</h1>
+      <nav>
+        <a href="index.html">Página Inicial</a>
+      </nav>
+    </header>
+    <main>
+      <video id="videoLore" width="640" height="360" autoplay>
+        <source src="loreFNAF.mp4" type="video/mp4" codecs="mp4a" />
+        <source src="loreFNAF.ogg" type="video/ogg" />
+      </video>
+      
+      <div>
+        <button id="playPause">Pausar</button>
+        <button id="reiniciar">Reiniciar</button>
+        <button id="retrasar">Retrasar 5s</button>
+        <button id="adelantar">Adelantar 5s</button>
+        <button id="silenciar">Silenciar</button>
+        <button id="bajarVolumen">Bajar Volumen</button>
+        <button id="subirVolumen">Subir Volumen</button>
+      </div>
+      <script>
+        const video = document.getElementById("videoLore");
+        const btnPlayPause = document.getElementById("playPause");
+        const btnReiniciar = document.getElementById("reiniciar");
+        const btnRetrasar = document.getElementById("retrasar");
+        const btnAdelantar = document.getElementById("adelantar");
+        const btnSilenciar = document.getElementById("silenciar");
+        const btnBajarVolumen = document.getElementById("bajarVolumen");
+        const btnSubirVolumen = document.getElementById("subirVolumen");
+
+        btnPlayPause.addEventListener("click", () => {
+          if (video.paused) {
+            video.play();
+            btnPlayPause.textContent = "Pausar";
+          } else {
+            video.pause();
+            btnPlayPause.textContent = "Reproducir";
+          }
+        });
+
+        btnReiniciar.addEventListener("click", () => {
+          video.currentTime = 0;
+          video.play();
+        });
+
+        btnRetrasar.addEventListener("click", () => {
+          video.currentTime = Math.max(0, video.currentTime - 5);
+        });
+
+        btnAdelantar.addEventListener("click", () => {
+          video.currentTime = Math.min(video.duration, video.currentTime + 5);
+        });
+
+        btnSilenciar.addEventListener("click", () => {
+          video.muted = !video.muted;
+          btnSilenciar.textContent = video.muted ? "Escuchar" : "Silenciar";
+        });
+
+        btnBajarVolumen.addEventListener("click", () => {
+          video.volume = Math.max(0, video.volume - 0.1);
+        });
+
+        btnSubirVolumen.addEventListener("click", () => {
+          video.volume = Math.min(1, video.volume + 0.1);
+        });
+      </script>
+    </main>
+  </body>
+</html>
