@@ -1,0 +1,55 @@
+h1{
+    color: cadetblue;
+}
+h2{
+    color: blue;
+}
+p strong {
+    color: red;
+}
+.destacado{
+    color: orange;
+}
+a em{
+    font-style: italic;
+    color: blue;
+}
+p a{
+    color: red;
+}
+div p a{
+    color: green;
+}
+.especial{
+    color: purple;
+}
+caption{
+    color: blue;
+}
+tr .especial{
+    color: orange;
+}
+td{
+    color: green;
+}
+td strong {
+    color: orange;
+}
+th[scope = "col"]:not(.especial), th[scope = "row"]:not(.especial){
+    color: red;
+}
+table{
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid black;
+}
+#adicional{
+    color: olive;
+}
+#adicional #especial{
+    color: fuchsia;
+}
+p{
+    width: 670px;
+}
